@@ -1,0 +1,24 @@
+{
+  "name": "agrichain-blockchain",
+  "version": "1.0.0",
+  "description": "AgriChain Smart Contract project using Hardhat",
+  "main": "hardhat.config.js",
+  "scripts": {
+    "compile": "npx hardhat compile",
+    "test": "npx hardhat test",
+    "deploy:local": "npx hardhat run scripts/deploy.js --network localhost",
+    "deploy:sepolia": "npx hardhat run scripts/deploy.js --network sepolia"
+  },
+  "keywords": [
+    "blockchain",
+    "hardhat",
+    "smart-contract",
+    "agrichain"
+  ],
+  "author": "An",
+  "license": "MIT",
+  "devDependencies": {
+    "@nomicfoundation/hardhat-toolbox": "^3.0.0",
+    "dotenv": "^16.0.0"
+  }
+}
