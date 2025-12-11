@@ -1,0 +1,335 @@
+/* src/pages/Home/Home.css */
+
+/* Biến màu sắc toàn cục cho trang Home */
+:root {
+  --primary-green: #2e7d32;      /* Xanh lá đậm */
+  --light-green: #e8f5e9;        /* Xanh lá nhạt (nền) */
+  --hover-green: #1b5e20;        /* Xanh khi hover */
+  --text-dark: #333333;
+  --text-gray: #666666;
+  --white: #ffffff;
+}
+
+.home-container {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  font-family: 'Inter', system-ui, sans-serif;
+  background-color: var(--white);
+  color: var(--text-dark);
+}
+
+/* --- HEADER --- */
+.home-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 3rem;
+  background-color: var(--white);
+  box-shadow: 0 2px 10px rgba(0,0,0,0.05);
+  position: sticky;
+  top: 0;
+  z-index: 100;
+}
+
+.logo-area {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: var(--primary-green);
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.nav-links {
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+}
+
+.nav-links a {
+  text-decoration: none;
+  color: var(--text-dark);
+  font-weight: 500;
+  transition: color 0.3s;
+}
+
+.nav-links a:hover {
+  color: var(--primary-green);
+}
+
+.btn-header-login {
+  padding: 0.6rem 1.2rem;
+  border: 1px solid var(--primary-green);
+  background-color: transparent;
+  color: var(--primary-green);
+  border-radius: 6px;
+  cursor: pointer;
+  font-weight: 600;
+  transition: all 0.3s;
+}
+
+.btn-header-login:hover {
+  background-color: var(--primary-green);
+  color: var(--white);
+}
+
+/* --- HERO SECTION --- */
+.hero-section {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 4rem 3rem;
+  background: linear-gradient(to right, var(--white) 50%, var(--light-green) 100%);
+  flex: 1; /* Đẩy footer xuống dưới cùng */
+}
+
+.hero-content {
+  max-width: 50%;
+}
+
+.hero-title {
+  font-size: 3rem;
+  line-height: 1.2;
+  margin-bottom: 1rem;
+  color: var(--text-dark);
+}
+
+.highlight-text {
+  color: var(--primary-green);
+}
+
+.hero-subtitle {
+  font-size: 1.1rem;
+  color: var(--text-gray);
+  margin-bottom: 2rem;
+  line-height: 1.6;
+}
+
+/* Search Box */
+.search-box {
+  display: flex;
+  gap: 10px;
+  background: var(--white);
+  padding: 0.5rem;
+  border-radius: 8px;
+  box-shadow: 0 4px 20px rgba(0,0,0,0.08);
+  max-width: 450px;
+}
+
+.search-input {
+  flex: 1;
+  border: none;
+  padding: 0.8rem;
+  font-size: 1rem;
+  outline: none;
+}
+
+.btn-search {
+  background-color: var(--primary-green);
+  color: var(--white);
+  border: none;
+  padding: 0 1.5rem;
+  border-radius: 6px;
+  cursor: pointer;
+  font-weight: 600;
+  transition: background 0.3s;
+}
+
+.btn-search:hover {
+  background-color: var(--hover-green);
+}
+
+/* Hero Image Placeholder */
+.hero-image {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.placeholder-circle {
+  width: 300px;
+  height: 300px;
+  background-color: var(--white);
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-shadow: 0 10px 30px rgba(46, 125, 50, 0.2);
+  border: 4px solid var(--white);
+}
+
+/* --- FEATURES SECTION --- */
+.features-section {
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+  padding: 4rem 3rem;
+  background-color: var(--white);
+}
+
+.feature-card {
+  flex: 1;
+  max-width: 300px;
+  text-align: center;
+  padding: 2rem;
+  border-radius: 12px;
+  border: 1px solid #eee;
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.feature-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 20px rgba(0,0,0,0.05);
+  border-color: var(--primary-green);
+}
+
+.icon-box {
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+}
+
+.feature-card h3 {
+  color: var(--primary-green);
+  margin-bottom: 0.5rem;
+}
+
+.feature-card p {
+  color: var(--text-gray);
+  font-size: 0.9rem;
+}
+
+/* --- FOOTER --- */
+.home-footer {
+  text-align: center;
+  padding: 1.5rem;
+  border-top: 1px solid #eee;
+  color: var(--text-gray);
+  font-size: 0.85rem;
+}
+
+.home-wrapper {
+  background-color: #fff;
+}
+
+.hero-section {
+  padding: 100px 20px;
+  background: linear-gradient(135deg, #f0fdf4 0%, #ffffff 100%); /* Gradient xanh nhạt cực nhẹ */
+}
+
+.hero-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  gap: 50px;
+}
+
+.hero-text {
+  flex: 1;
+}
+
+.badge {
+  background-color: #dcfce7;
+  color: #166534;
+  padding: 5px 15px;
+  border-radius: 20px;
+  font-size: 0.9rem;
+  font-weight: 600;
+  display: inline-block;
+  margin-bottom: 1rem;
+}
+
+.hero-title {
+  font-size: 3.5rem;
+  line-height: 1.1;
+  color: #1f2937;
+  margin-bottom: 1.5rem;
+}
+
+.highlight {
+  color: #2e7d32;
+}
+
+.hero-desc {
+  font-size: 1.1rem;
+  color: #6b7280;
+  margin-bottom: 2.5rem;
+  line-height: 1.6;
+  max-width: 90%;
+}
+
+/* Search Box Modern */
+.search-wrapper {
+  background: white;
+  padding: 8px;
+  border-radius: 50px; /* Hình viên thuốc */
+  box-shadow: 0 10px 25px rgba(0,0,0,0.08);
+  display: flex;
+  width: fit-content;
+  border: 1px solid #e5e7eb;
+}
+
+.search-input-group {
+  display: flex;
+  align-items: center;
+  padding: 0 15px;
+}
+
+.search-input-group input {
+  border: none;
+  outline: none;
+  font-size: 1rem;
+  padding: 10px;
+  width: 300px;
+}
+
+.btn-search {
+  background-color: #2e7d32;
+  color: white;
+  border: none;
+  padding: 12px 30px;
+  border-radius: 40px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: transform 0.2s;
+}
+
+.btn-search:hover {
+  background-color: #1b5e20;
+  transform: scale(1.05);
+}
+
+/* Feature Grid Update */
+.features-container {
+  padding: 80px 20px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.section-header {
+  text-align: center;
+  margin-bottom: 50px;
+}
+.section-header h2 { font-size: 2.5rem; color: #1f2937; margin-bottom: 10px;}
+
+.feature-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 30px;
+}
+
+.feature-item {
+  padding: 40px;
+  border-radius: 20px;
+  background: #fff;
+  border: 1px solid #f3f4f6;
+  transition: all 0.3s;
+}
+
+.feature-item:hover {
+  box-shadow: 0 20px 40px rgba(0,0,0,0.08);
+  transform: translateY(-10px);
+  border-color: #2e7d32;
+}
