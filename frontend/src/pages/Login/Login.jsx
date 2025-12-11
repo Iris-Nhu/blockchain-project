@@ -59,7 +59,6 @@ const Login = () => {
     <div className="login-container">
       <div className="login-card">
         <div className="logo-section">
-            {/* Bạn có thể thay Icon lá cây vào đây */}
             <h1>AgriChain</h1>
             <p>Hệ thống truy xuất nguồn gốc nông sản</p>
         </div>
