@@ -14,3 +14,8 @@ async function main() {
   console.log("✅ ProductTraceability contract deployed at:", productTraceability.address);
 }
 
+// Thực thi script
+main().catch((error) => {
+  console.error("❌ Deploy failed:", error);
+  process.exitCode = 1;
+});
