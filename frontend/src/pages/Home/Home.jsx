@@ -30,7 +30,7 @@ const Home = () => {
               <span className="highlight">Minh bạch nguồn gốc</span>
             </h1>
             <p className="hero-desc">
-              Kiểm tra hành trình từ nông trại đến bàn ăn chỉ với một lần quét. 
+              Kiểm tra các  từ nông trại đến bàn ăn chỉ với một lần quét. 
               Bảo vệ sức khỏe gia đình bạn với dữ liệu không thể làm giả.
             </p>
 
@@ -55,7 +55,7 @@ const Home = () => {
       <section id="features" className="features-container">
         <div className="section-header">
            <h2>Tại sao chọn AgriChain?</h2>
-           <p>Giải pháp công nghệ tiên phong cho nông nghiệp Việt</p>
+           <p>Giải pháp công nghệ tiên phong cho chất lượng nông sản Việt</p>
         </div>
         <div className="feature-grid">
            <div className="feature-item">
@@ -66,12 +66,12 @@ const Home = () => {
            <div className="feature-item">
              <div className="icon">⚡</div>
              <h3>Truy xuất siêu tốc</h3>
-             <p>Kết quả hiển thị ngay lập tức với độ chính xác 100%.</p>
+             <p>Kết quả hiển thị nhanh chóng, tiện lợi.</p>
            </div>
            <div className="feature-item">
              <div className="icon">📱</div>
              <h3>Dễ dàng sử dụng</h3>
-             <p>Giao diện thân thiện, tương thích mọi thiết bị di động.</p>
+             <p>Giao diện thân thiện, tương thích thiết bị di động.</p>
            </div>
         </div>
       </section>
