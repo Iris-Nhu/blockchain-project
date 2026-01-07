@@ -8,7 +8,7 @@ const Footer = () => {
       <div className="footer-content">
         {/* Cột 1: Thông tin thương hiệu */}
         <div className="footer-section brand">
-          <h2>🌿 AgriChain</h2>
+          <h2>🌿 ChanNong Solution</h2>
           <p>
             Nền tảng truy xuất nguồn gốc nông sản minh bạch, 
             ứng dụng công nghệ Blockchain để truy vết nguồn gốc thông qua các giấy chứng nhận tiêu chuẩn nông sản.
@@ -29,13 +29,13 @@ const Footer = () => {
         <div className="footer-section contact">
           <h3>Liên hệ</h3>
           <p>📍 Ninh Kiều, Cần Thơ</p>
-          <p>📧 contact@agrichain.vn</p>
+          <p>📧 contact@channong.vn</p>
           <p>📞 (+84) 775 907 742</p>
         </div>
       </div>
 
       <div className="footer-bottom">
-        <p>&copy; 2025 AgriChain Project</p>
+        <p>&copy; 2025 ChanNong Solutions</p>
       </div>
     </footer>
   );
